@@ -1,0 +1,5 @@
+openai
+arxiv
+streamlit
+PyMuPDF
+requests

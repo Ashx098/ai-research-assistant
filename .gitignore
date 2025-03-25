@@ -1,0 +1,25 @@
+# Python cache & build
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+aiagent_env/           # ✅ Your venv name — correct
+.aiagent_env/          # ✅ Covers hidden folders too
+
+# Env variables / secrets
+.env                   # ✅ Protects OpenAI key if stored in .env
+
+# Streamlit & notebooks
+.ipynb_checkpoints/
+.streamlit/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
