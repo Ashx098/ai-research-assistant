@@ -56,3 +56,10 @@ An agentic AI application that searches academic research papers from [arXiv](ht
 
 ## 💡 Built By
 - Avinash Mynampati
+
+
+## 🚀 Live Demo
+
+Try it here: [ai-research-assistant.streamlit.app](https://ai-research-assistant7.streamlit.app)
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-research-assistant7.streamlit.app)
