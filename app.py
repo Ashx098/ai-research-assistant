@@ -49,7 +49,12 @@ def summarize_text(text):
         response = client.chat.completions.create(
             model="gpt-3.5-turbo-16k",
             messages=[
-                {"role": "system", "content": "You're an AI research assistant. Summarize the key points of the paper clearly and concisely."},
+                {"role": "system", "content": "You are an AI research assistant. Read the research paper text and provide:"
+"1. A detailed summary of the paper (aim for depth, not brevity),"
+"2. Key insights, contributions, and techniques,"
+"3. Any limitations or future work mentioned."
+"Write in a way that helps students or researchers quickly grasp the paper essence."
+},
                 {"role": "user", "content": text}
             ]
         )
