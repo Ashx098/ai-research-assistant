@@ -1,12 +1,21 @@
 # 🧠 AI Research Assistant
 
-An agentic AI application that searches academic research papers from arXiv, downloads the PDF, extracts content, and summarizes it using OpenAI GPT-3.5 Turbo — all in one click.
+An agentic AI application that searches academic research papers from [arXiv](https://arxiv.org), downloads the PDF, extracts content, and summarizes it using OpenAI GPT-3.5 Turbo — all in one click.
+
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 🚀 Features
-- Real-time arXiv search by topic
-- PDF download and text extraction
-- Summarization using OpenAI's GPT-3.5 (16k context)
-- Streamlit UI for clean interaction
+- 🔍 Enter any research topic (e.g., “Bayesian Optimization”)
+- 📚 Fetch top papers from **arXiv**
+- 📄 Extract content from PDF (using PyMuPDF)
+- 🤖 Summarize the paper using **GPT-3.5 Turbo**
+- 🧠 Agentic flow: autonomous search → retrieval → summarization
+- 📥 Download summaries as `.txt`
+- 🧼 No hardcoded API keys — users enter their own key securely
+- 🎨 Clean UI with expandable summaries
 
 ## 📦 Tech Stack
 - Python
@@ -20,7 +29,7 @@ An agentic AI application that searches academic research papers from arXiv, dow
 
 1. Clone the repo
 2. Create and activate a virtual environment:
-   ```bash
+   
    python -m venv aiagent_env
    aiagent_env\Scripts\activate  # Windows
 
@@ -33,4 +42,17 @@ An agentic AI application that searches academic research papers from arXiv, dow
 
 - streamlit run app.py
 
-![Output](image.png)
+![Demo](image.png)
+
+## OpenAI Key Security
+- No keys are hardcoded.
+
+- Users must enter their own OpenAI API key in the sidebar.
+
+- This ensures the app is safe for deployment and usage without billing the developer.
+
+## 📄 License
+- This project is licensed under the MIT License.
+
+## 💡 Built By
+- Avinash Mynampati
