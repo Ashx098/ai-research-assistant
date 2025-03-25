@@ -12,6 +12,7 @@ An agentic AI application that searches academic research papers from [arXiv](ht
 - 📚 Fetch top papers from **arXiv**
 - 📄 Extract content from PDF (using PyMuPDF)
 - 🤖 Summarize the paper using **GPT-3.5 Turbo**
+- 🧾 Structured Summary Format: Problem, Method, Results, Impact, Limitations
 - 🧠 Agentic flow: autonomous search → retrieval → summarization
 - 📥 Download summaries as `.txt`
 - 🧼 No hardcoded API keys — users enter their own key securely
@@ -63,3 +64,6 @@ An agentic AI application that searches academic research papers from [arXiv](ht
 Try it here: [ai-research-assistant.streamlit.app](https://ai-research-assistant7.streamlit.app)
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-research-assistant7.streamlit.app)
+
+![Thumbnail](image.png)
+
