@@ -49,18 +49,23 @@ def summarize_text(text):
         response = client.chat.completions.create(
             model="gpt-3.5-turbo-16k",
             messages=[
-                {"role": "system", "content": "You are an AI research assistant. Read the research paper text and provide:"
-"1. A detailed summary of the paper (aim for depth, not brevity),"
-"2. Key insights, contributions, and techniques,"
-"3. Any limitations or future work mentioned."
-"Write in a way that helps students or researchers quickly grasp the paper essence."
-},
+                {
+                    "role": "system",
+                    "content": "You are an AI research assistant. Given the content of a research paper, provide a detailed and structured summary with the following format:\n\n"
+                               "🔍 **Problem Statement**: Clearly explain the problem the paper addresses.\n"
+                               "🧪 **Proposed Method**: Describe the solution, algorithm, or method proposed in detail.\n"
+                               "📈 **Results & Evaluation**: Summarize the experimental setup and key results.\n"
+                               "🎯 **Impact & Applications**: Highlight the real-world relevance, use cases, or potential impact.\n"
+                               "⚠️ **Limitations & Future Work**: Mention any limitations, assumptions, or suggestions for future research.\n\n"
+                               "Use clear and accessible language. The summary should be at least 10–12 lines long."
+                },
                 {"role": "user", "content": text}
             ]
         )
         return response.choices[0].message.content
     except Exception as e:
         return f"Error during summarization: {e}"
+
 
 # ----- UI -----
 query = st.text_input("🔍 Your Research Topic", placeholder="e.g. Bayesian Optimization")
